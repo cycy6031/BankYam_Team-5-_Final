@@ -115,14 +115,14 @@
 </body>
 <script>
     var windowWidth = $(window).width();
-                $(window).resize(function(){
-                    if(this.resizeTO){
-                        clearTimeout(this.resizeTO);
-                    }
-                    this.resizeTO = setTimeout(function(){
-                        $(this).trigger('resizeEnd');
-                    });
-                });
+    $(window).resize(function(){
+        if(this.resizeTO){
+            clearTimeout(this.resizeTO);
+        }
+        this.resizeTO = setTimeout(function(){
+            $(this).trigger('resizeEnd');
+        });
+    });
     $(window).on('resizeEnd', function(){
         windowWidth = $(window).width();
         if(windowWidth>700){
