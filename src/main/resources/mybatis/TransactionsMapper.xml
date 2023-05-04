@@ -84,6 +84,7 @@
                 AND T.tr_other_accnum = #{tr_other_accnum}
             </if>
         </where>
+        ORDER BY T.TR_DATE DESC
     </select>
     <select id="selectTest" resultMap="transactions" parameterType="Transactions">
         SELECT * FROM TRANSACTIONS T

@@ -25,6 +25,7 @@
     color: #555;
     outline: 0 !important;
     text-decoration: none;
+    cursor: pointer;
 }
 .active{
     background-color: var(--themecolor);

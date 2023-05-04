@@ -48,7 +48,7 @@
     <c:if test="${sessionScope.membery ne null}">
     <ul class="canvas-items2">
         <li><a href="/member/profile">프로필</a></li>
-        <li><a href="/account/transfer">계좌이체</a></li>
+        <li><a onclick="openTrPop(0)" style="cursor: pointer;">계좌이체</a></li>
         <li><a href="/chat/list">얌톡</a></li>
         <li><a href="/member/logout_ok">로그아웃</a></li>
     </ul>
