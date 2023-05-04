@@ -5,6 +5,7 @@
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 .tone-down{
 	content :'';
@@ -169,6 +170,7 @@ a {
     width: 32px;
     display: flex;
     margin: 5px;
+    cursor: pointer;
 }
 input[id="menuicon"]{
     display: none;
