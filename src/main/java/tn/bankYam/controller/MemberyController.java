@@ -198,7 +198,7 @@ public class MemberyController {
 		Accounty accounty = new Accounty();
 		Membery memberyVal = memberyService.findByEmailS(membery.getMb_email());
 		hashMap.put("ac_mb_seq", memberyVal.getMb_seq());
-		Product product = accountyService.findPdBySeq(1);
+		Product product = accountyService.findDepositPdVal("뱅크얌넘버원");
 		hashMap.put("membery", memberyVal);
 		hashMap.put("ac_pd_seq", product.getPd_seq());
 		hashMap.put("ac_name",product.getPd_name());
